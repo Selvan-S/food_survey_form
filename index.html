@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Survey Form</title>
+    <link rel="stylesheet" href="CSS/survey_form.css">
+</head>
+
+<body style="background-image: url('Images/food.jpeg');">
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="main">
+        <header>
+            <h1 id="title"> Food Survey Form</h1>
+            <p id="description" class="description"> Thank You for taking the time to enter the favourite food you eat!</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label">Name</label><input type="text" id="name" class="form-control"
+                    placeholder="Enter Your Name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label">Email</label><input class="form-control" type="email" id="email"
+                    placeholder="Enter Your Email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label">Age<span class="clue">(optional)</span></label><input class="form-control"
+                    type="number" id="number" placeholder="Age" name="age" required min="10" max="100">
+            </div>
+            <div class="form-group">
+                <p style="margin-bottom: 0.5rem; font-size: 1.125rem;">Gender</p>
+                <select name="gender" id="dropdown" class="form-control">
+                    <option disabled selected value>Select Your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                    <option value="preferNo">Prefer not to say</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>What kind of food would you like to eat?</h3>
+                <label><input class="input-radio" type="radio" name="i-ate" value="veg" id="veg">Vegetarian Food</label>
+                <label"><input class="input-radio" type="radio" name="i-ate" value="non-veg" id="non-veg">Non-Vegetarian
+                    Food</label>
+            </div>
+            <div class="form-group">
+                <h3>Which is your favourite food in this list?</h3>
+                <label><input type="checkbox" class="input-checkbox" name="favourite-food" value="sambar"
+                        id="sambar">Sambar</label>
+                <label><input type="checkbox" class="input-checkbox" name="favourite-food" value="peking-duck"
+                        id="peking-duck">Peking duck</label>
+                <label><input type="checkbox" class="input-checkbox" name="favourite-food" value="Hyderabadi-biryani"
+                        id="Hyderabadi-biryani">Hyderabadi biryani</label>
+                <label><input type="checkbox" class="input-checkbox" name="favourite-food" value="sushi"
+                        id="sushi">Sushi</label>
+                <label><input type="checkbox" class="input-checkbox" name="favourite-food" value="idli"
+                        id="idli">Idli</label>
+                <label><input type="checkbox" class="input-checkbox" name="favourite-food" value="chapati"
+                        id="chapati">Chapati</label>
+                <label><input type="checkbox" class="input-checkbox" name="favourite-food" value="parota"
+                        id="parota">Parota</label>
+                <label><input type="checkbox" class="input-checkbox" name="favourite-food" value="pizza"
+                        id="pizza">Pizza</label>
+
+                <label><input type="checkbox" class="input-checkbox" name="favourite-food" value="masala-dosa"
+                        id="masala-dosa">Masala dosa</label>
+
+                <label><input type="checkbox" class="input-checkbox" name="favourite-food" value="Hamburger"
+                        id="Hamburger">Hamburger</label>
+
+            </div>
+            <div class="form-group">
+                <h3>Suggest your favourite food!</h3>
+                <textarea name="food-suggestion" id="" cols="30" rows="10" class="input-textarea"
+                    placeholder="Suggest your favourite food here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>
